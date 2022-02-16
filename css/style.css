@@ -1,9 +1,11 @@
 .hidden {
   display: none;
 }
-body {
+main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 img {
   position: fixed;
@@ -17,14 +19,40 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: wheat;
-  font-size: 60px;
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 100px;
 }
 #login-form {
-  display: flex;
-
-  justify-content: center;
-  height: 40px;
+  align-items: center;
+  position: relative;
+  top: -50px;
+}
+#login-form input:first-child {
+  border: 3px solid black;
+  border: none;
+  height: 50px;
+  width: 200px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border-bottom: 3px solid white;
+}
+#login-form input:first-child::placeholder {
+  color: white;
+}
+#login-form input:first-child:focus {
+  border: none;
+  border-bottom: 3px solid white;
+  outline: none;
+}
+#login-form input:last-child {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
 }
 #weather {
   display: flex;
@@ -32,4 +60,37 @@ img {
   font-size: 30px;
   font-weight: 600;
   color: white;
+  text-shadow: 2px 2px 2px #000;
+}
+#greeting {
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+}
+#quote {
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+  position: fixed;
+  bottom: 50px;
+}
+#todo-form input:first-child {
+  border: 3px solid black;
+  border: none;
+  height: 50px;
+  width: 240px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border-bottom: 3px solid white;
+}
+#todo-form input:first-child::placeholder {
+  color: white;
+}
+#todo-list {
+  color: white;
+}
+#todo-list button {
+  border: none;
+  background: transparent;
+  font-size: 10px;
 }
